@@ -1,0 +1,78 @@
+.image-div     {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 15px;
+}
+							
+.first-duvet     {
+                  position: relative;
+}
+
+.price           {
+                  position: absolute;
+                  color: #ff5722;
+                  text-align: center;
+                  padding: 80px 20px 15px 100px;
+                  font-size: 28px;
+                  font-weight: bold;
+                  bottom: -45px;
+                  opacity: 0;
+                  transition: opacity 0.15s;
+                  pointer-events: none;
+                  white-space: nowrap;
+}
+
+.first-duvet:hover .price    {
+																	opacity: 1;
+}
+
+ 
+ .first-duvet img      {
+                          width: 100%;
+}
+ .img4, .mach1, .img5,
+ .img6                {
+                       width: 100%;
+}
+
+.duvet-right 			{ 
+                    position: relative;
+                    float: right;
+                    margin-top: 40px;
+                    margin-left: 2px;
+}
+
+.duvet-right:hover .price    {
+                              opacity: 1;
+}
+		 
+/*@media (max-width: 750px) {
+              header {
+              grid-template-columns: 1fr 1fr; 
+              }
+              }	
+*/              
+
+@media screen and (min-width: 450px) and (max-width: 600px) {
+				.image-div{grid-template-columns: 1fr;
+                    row-gap: 50px;
+                    
+}
+}
+@media screen and (min-width: 601px) and (max-width: 1100px) {
+				.image-div {grid-template-columns: 1fr 1fr;
+                    row-gap: 50px;
+}
+}
+
+@media screen and (min-width:1101 px) and (max-width: 1500px) {
+				.image-div {grid-template-columns: 1fr 1fr 1fr;
+                    row-gap: 50px;
+}
+}
+
+@media screen and (max-width:600px) {
+				.duvet-right {width: 100%;
+                      margin-bottom: 50px;
+				}
+				}

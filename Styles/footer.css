@@ -1,0 +1,105 @@
+footer              {
+											background-color: #03322A;
+											padding-bottom: 50px;
+										}
+
+.footer-contents    {
+                      display: grid;
+                      grid-template-columns: 1fr 1fr 1fr 1fr;
+                      column-gap: 15px;
+}
+
+.logo         {
+                text-align: center; 
+                color: orange; 
+                padding: 5px;
+                font-size: 40px;
+}
+
+.flcontent 			{
+									text-align: center;
+}
+
+.footul			{
+							list-style-type: none;				
+}
+
+.footul li a   {
+                text-decoration: none;
+                display: block;
+                font-size: 21px;
+                color: powderblue;			  
+                padding: 4px;
+}
+
+.footul li      {
+                  margin-left: -20px;
+}
+
+.footul p   {
+                text-decoration: none;
+                display: block;
+                font-size: 24px;
+                color: powderblue;			  
+}
+
+.tel, .email,
+.address    {
+              color: powderblue;
+              font-size: 20px;
+}
+
+.contact-icon-footer  {
+                        padding-top: 40px;
+                        padding-bottom: 15px;
+}
+
+.tel a                {
+                        text-decoration: none;
+                        font-size: 21px;
+                        color: powderblue;
+}
+
+.gmail-icon-footer  {
+                        padding-top: 40px;
+                        padding-bottom: 40px;
+}
+
+.email a                {
+                        text-decoration: none;
+                        font-size: 21px;
+                        color: powderblue;
+}
+
+.address-icon   {
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+				.logo {width: 100%;
+}
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+				footer {width: 100%;
+}
+}
+
+@media screen and (min-width: 450px) and (max-width: 600px) {
+    .footer-contents {grid-template-columns: 1fr;
+                       row-gap: 50px;
+}
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .footer-contents  {grid-template-columns: 1fr 1fr;
+                       row-gap: 50px;
+}
+}
+
+@media screen and (min-width: 801px) and (max-width: 1500px) {
+    .footer-contents  {grid-template-columns: 1fr 1fr 1fr 1fr;
+                       row-gap: 50px;
+}
+}
+

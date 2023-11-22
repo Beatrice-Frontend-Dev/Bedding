@@ -1,0 +1,41 @@
+.navigatn   { width: 100%;
+							overflow: hidden;
+							margin-top: 2px;
+						 background-color: rgb(30 15 100);
+						 border-radius: 6px;
+             margin-right: 20px;
+}
+			
+.navigatn a {display: block; 
+						 color: white;
+						 font-size: 21px;
+						 margin-left: 20px;
+						 float: left;
+						 padding: 32px;
+						 text-decoration: none;
+						 font-weight: bold;
+						 text-align: center;
+}
+
+
+.navigatn a:hover {text-decoration-line: underline;
+                   text-decoration-color: #DAA1E5;
+									 text-decoration-thickness: 3px;
+									 color: orange;
+}	
+
+.navigatn a.active  {
+                      color: yellow;		
+}
+
+
+@media screen and (max-width: 600px) {
+				.navigatn a {width: 100%;
+										 padding-left: 10px;
+}
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+				.navigatn a {width: 100%;
+}
+}
